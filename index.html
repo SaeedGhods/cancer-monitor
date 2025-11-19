@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Cancer Detection - Monitor Your Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-icon">🩺</div>
+            <div class="loader-text">CancerMonitor</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🩺</span>
+                <span class="logo-text">CancerMonitor</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#diet">Diet</a></li>
+                <li><a href="#tracking">Tracking</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#cta" class="btn-nav">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Early Detection Saves Lives</div>
+                <h1 class="hero-title">
+                    Detect Cancer <span class="highlight">Before It's Too Late</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Monitor your health through comprehensive blood testing, optimize your diet to reduce blood sugar, and track your progress with real-time glucose monitoring. Take control of your health today.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn btn-primary">
+                        <span>Start Your Journey</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <span>Learn More</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-icon">🔬</div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Key Metrics</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Real-time Tracking</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon">♾️</div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Continuous Monitoring</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring ring-2"></div>
+                    <div class="health-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <path d="M40 10L50 30L70 35L55 50L57 70L40 60L23 70L25 50L10 35L30 30L40 10Z" fill="currentColor" opacity="0.9"/>
+                        </svg>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="float-element el-1">📊</div>
+                        <div class="float-element el-2">🩸</div>
+                        <div class="float-element el-3">💚</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Key Metrics Section -->
+    <section id="metrics" class="metrics-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Comprehensive Testing</div>
+                <h2 class="section-title">Three Key Cancer Metrics</h2>
+                <p class="section-description">
+                    Quantify your cancer levels through comprehensive blood testing. These three critical metrics provide early detection and monitoring capabilities that can save your life.
+                </p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">🔬</div>
+                    <h3 class="metric-title">Tumor Markers</h3>
+                    <p class="metric-description">
+                        Measure specific proteins and substances in your blood that indicate the presence of cancer cells. Track changes over time to detect early warning signs.
+                    </p>
+                    <div class="metric-features">
+                        <span class="feature-tag">CEA</span>
+                        <span class="feature-tag">CA 19-9</span>
+                        <span class="feature-tag">PSA</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🩸</div>
+                    <h3 class="metric-title">Inflammatory Markers</h3>
+                    <p class="metric-description">
+                        Monitor inflammation levels that can indicate cancer development. Chronic inflammation is linked to increased cancer risk and progression.
+                    </p>
+                    <div class="metric-features">
+                        <span class="feature-tag">CRP</span>
+                        <span class="feature-tag">ESR</span>
+                        <span class="feature-tag">IL-6</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🧬</div>
+                    <h3 class="metric-title">Genetic Markers</h3>
+                    <p class="metric-description">
+                        Analyze genetic indicators and circulating tumor DNA (ctDNA) to detect cancer at its earliest stages, even before symptoms appear.
+                    </p>
+                    <div class="metric-features">
+                        <span class="feature-tag">ctDNA</span>
+                        <span class="feature-tag">MicroRNA</span>
+                        <span class="feature-tag">Methylation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="metrics-cta">
+                <p class="cta-text">Ready to get your baseline measurements?</p>
+                <a href="#cta" class="btn btn-primary">Schedule Blood Test</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet Section -->
+    <section id="diet" class="diet-section">
+        <div class="container">
+            <div class="diet-content">
+                <div class="diet-text">
+                    <div class="section-badge">Nutritional Strategy</div>
+                    <h2 class="section-title">Reduce Blood Sugar Through Diet</h2>
+                    <p class="section-description">
+                        High blood sugar levels can fuel cancer growth. By making strategic dietary changes, you can reduce your glucose levels and create an environment less favorable for cancer development.
+                    </p>
+                    <div class="diet-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Lower Cancer Risk</h4>
+                                <p>Reduced glucose levels decrease cancer cell growth and proliferation</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Improved Metabolism</h4>
+                                <p>Better insulin sensitivity and metabolic health</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div>
+                                <h4>Enhanced Immunity</h4>
+                                <p>Stable blood sugar supports your immune system's ability to fight cancer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diet-recommendations">
+                        <h3>Key Dietary Strategies</h3>
+                        <ul class="recommendations-list">
+                            <li>Reduce refined carbohydrates and sugars</li>
+                            <li>Increase fiber-rich foods and vegetables</li>
+                            <li>Choose low-glycemic index foods</li>
+                            <li>Incorporate healthy fats and lean proteins</li>
+                            <li>Practice intermittent fasting or time-restricted eating</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diet-visual">
+                    <div class="food-wheel">
+                        <div class="wheel-item" style="--angle: 0deg">🥗</div>
+                        <div class="wheel-item" style="--angle: 60deg">🥑</div>
+                        <div class="wheel-item" style="--angle: 120deg">🐟</div>
+                        <div class="wheel-item" style="--angle: 180deg">🥦</div>
+                        <div class="wheel-item" style="--angle: 240deg">🌾</div>
+                        <div class="wheel-item" style="--angle: 300deg">🫐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Real-Time Monitoring</div>
+                <h2 class="section-title">Live Blood Sugar Tracking</h2>
+                <p class="section-description">
+                    Monitor your glucose levels in real-time with our wireless glucometer integration. See how your dietary changes impact your blood sugar throughout the day with instant feedback.
+                </p>
+            </div>
+            <div class="tracking-content">
+                <div class="tracking-visual">
+                    <div class="glucose-monitor">
+                        <div class="monitor-screen">
+                            <div class="glucose-reading">
+                                <span class="reading-value">98</span>
+                                <span class="reading-unit">mg/dL</span>
+                            </div>
+                            <div class="reading-status good">Normal</div>
+                            <div class="glucose-chart">
+                                <svg viewBox="0 0 300 150" class="chart-svg">
+                                    <polyline
+                                        points="0,120 30,110 60,100 90,95 120,90 150,88 180,85 210,90 240,95 270,100 300,98"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="monitor-stats">
+                                <div class="monitor-stat">
+                                    <span class="stat-label">Today Avg</span>
+                                    <span class="stat-value">95 mg/dL</span>
+                                </div>
+                                <div class="monitor-stat">
+                                    <span class="stat-label">Time in Range</span>
+                                    <span class="stat-value">92%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracking-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Wireless Connectivity</h3>
+                        <p>Seamlessly sync your glucose readings to your smartphone or dashboard in real-time</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Trend Analysis</h3>
+                        <p>View patterns and trends over time to understand how your diet affects your glucose levels</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Smart Alerts</h3>
+                        <p>Get notified when your glucose levels are outside your target range</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Progress Reports</h3>
+                        <p>Generate comprehensive reports showing your improvement over time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works / Cycle Section -->
+    <section id="how-it-works" class="cycle-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Proven Process</div>
+                <h2 class="section-title">The Continuous Monitoring Cycle</h2>
+                <p class="section-description">
+                    Our proven approach helps you detect cancer early and track your progress as you make positive changes to your health. Repeat the cycle to continuously improve.
+                </p>
+            </div>
+            <div class="cycle-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🩸</div>
+                    <h3>Blood Test</h3>
+                    <p>Get your baseline measurements for the three key cancer metrics through comprehensive blood testing</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🥗</div>
+                    <h3>Dietary Changes</h3>
+                    <p>Implement a low-sugar diet plan designed to reduce your blood glucose levels and create a healthier internal environment</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Live Tracking</h3>
+                    <p>Monitor your blood sugar levels continuously using our wireless glucometer to see real-time improvements</p>
+                </div>
+                <div class="step-arrow cycle-arrow">🔁</div>
+                <div class="step-card highlight-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">📊</div>
+                    <h3>Repeat & Improve</h3>
+                    <p>Regularly retest your cancer metrics and watch how they improve as your blood sugar stabilizes. Early detection saves lives.</p>
+                </div>
+            </div>
+            <div class="cycle-benefits">
+                <div class="benefit-box">
+                    <h4>Early Detection</h4>
+                    <p>Catch cancer markers before they become problematic</p>
+                </div>
+                <div class="benefit-box">
+                    <h4>Data-Driven</h4>
+                    <p>Make informed decisions based on real measurements</p>
+                </div>
+                <div class="benefit-box">
+                    <h4>Proactive Health</h4>
+                    <p>Take control of your health before it's too late</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">Join Thousands of Health-Conscious Individuals</div>
+                <h2 class="cta-title">Start Your Health Journey Today</h2>
+                <p class="cta-description">
+                    Don't wait until it's too late. Begin monitoring your cancer metrics and take control of your health with our comprehensive program. Early detection saves lives.
+                </p>
+                <form class="cta-form" id="signupForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Get Started Now</button>
+                </form>
+                <p class="form-disclaimer">
+                    By submitting, you agree to be contacted about our health monitoring program. We respect your privacy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <span class="logo-icon">🩺</span>
+                        <span class="logo-text">CancerMonitor</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering early cancer detection through comprehensive monitoring and lifestyle optimization.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#home">About Us</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#cta">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#metrics">Cancer Metrics</a></li>
+                            <li><a href="#diet">Diet Guide</a></li>
+                            <li><a href="#tracking">Tracking Tools</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Medical Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CancerMonitor. All rights reserved.</p>
+                <p class="medical-disclaimer">
+                    <strong>Medical Disclaimer:</strong> This website provides general health information and should not replace professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare providers for medical concerns.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
